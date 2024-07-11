@@ -1,49 +1,135 @@
 * {
     font-family: "Quattrocento Sans", sans-serif;
 }
+
+
+
 .top-nav {
     background-color: black;
     font-weight: lighter;
     color: rgb(247, 247, 247);
     font-size: small;
     font-style: inherit;
-    position: absolute;
     width: 100%;
 }
-.nav-link li {
+.nav-a{
     padding: 15px;
     font-weight: 510;
-}
-.wrapper {
-    display: inline-flex;
+    text-decoration: none;
+    color: inherit;
+  transition: color 0.3s;
+    font-size: 16px;
     
 }
- .icon i {
-    color: #000000;
-    font-size: 15px;
-    margin:  5px;
-    transition: color 0.3s, background-color 0.3s;
-    padding: 10px;
-    border: 3px solid black;
-    border-radius: 60%;
 
-}
-.icon i:hover {
-    color: #ffffff;
-    background-color: #000000;
-    border-radius: 50%;
-    padding: 10px;
+.nav-a:hover {
+    color: rgb(249, 144, 38);
 }
 
-      
 
-.btn1:hover{
-
-    color: #000000;
-    background-color:rgb(222, 191, 206);
-    
-
+.dropdown {
+    position: relative;
 }
+.dropdown-toggle::after {
+    opacity: 0; /* Hide the dropdown icon */
+    /* or */
+    visibility: hidden; /* Hide the dropdown icon */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  animation: slideDown 0.3s ease forwards;
+}
+
+.dropdown-menu {
+    display: none; /* Hide dropdown menu by default */
+    background-color: #fff;
+    min-width: 10rem;
+    width: 300px;
+    z-index: 1000; /* Ensure dropdown appears above other elements */
+    position: absolute;
+    top: 100%; /* Position below the dropdown trigger */ /* Position to the left of the dropdown trigger */
+    right: 30%;
+    border-radius: 0%; /* Remove border */
+}
+.dropdown-menu a {
+    color: #333;
+    padding: 0.5rem 1rem;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    color:  rgb(249, 144, 38);
+}
+
+/* Animation keyframes for dropdown */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.home-btn {
+    background-color: transparent;
+    border: 2px solid #333;
+    color: #333;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: -20px;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+
+  .home-btn:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hover-button {
+    position: absolute;
+    margin-top: -440px;
+    margin-left:10px ;
+    height: 4%;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: rgb(167, 0, 0);
+    color: #fff;
+    border: 0;
+    display: none; /* Initially hide the button */
+}
+
+.image-container:hover .hover-button {
+    display: block; /* Display the button on hover */
+}
+
+.sign-up-dash{
+
+    width: 79px; /* Adjust as needed */
+    height: 7px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -11px;
+    margin-right: 337px;
+}     
+
 .gallary-text{
     position: absolute; 
     margin-top: -200px; 
@@ -53,6 +139,15 @@
     margin-left: 50px;
 
 }
+.italy-dash{
+
+    width: 28px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -45px;
+    margin-right: 570px;
+}
 .gallary2-text{
     position: absolute; 
     margin-top: -230px; 
@@ -61,6 +156,61 @@
     color: rgb(247, 247, 247); 
     margin-left: 50px;
 
+}
+
+
+
+.shop-now-dash{
+
+    width: 107px; /* Adjust as needed */
+    height: 7px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -11px;
+    margin-right: 220px;
+}     
+
+
+.click-btn {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 39%;
+    margin-top: 20px;
+
+  }
+  .click-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .click-here-btn-dash{
+
+    width: 148px; /* Adjust as needed */
+    height: 15px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -16px;
+    margin-right: 283px;
+}          
+
+
+
+.peru-page{
+
+    width: 74px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -16px;
+    margin-right: 531px;
 }
 
 .card-body{
@@ -77,3 +227,166 @@
     margin-top: 15px;
     line-height: 1.8;
 }
+.transparent-btn {
+    background-color: transparent;
+    border: 2px solid rgb(233, 222, 227);
+    color:rgb(233, 222, 227);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-top: 20px;
+
+    
+               }
+
+.transparent-btn:hover {
+    background-color: rgb(233, 222, 227);
+    color: #000000;
+          }
+          
+
+          .click-here{
+
+            width: 120px; /* Adjust as needed */
+            height: 7px; /* Thickness of the dash */
+            background-color: rgb(250, 215, 169);
+            margin: 70px auto 0 auto; /* Centering and margin */
+            margin-top: -11px;
+            margin-right: 415px;
+        }          
+
+
+.here-dash{
+
+    width: 32px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -23px;
+    margin-right: 463px;
+}
+
+
+.footer-item {
+
+    justify-content: space-around;
+    width: 50%;
+  margin-left: 350px;
+  margin-top: 30px;
+  
+}
+
+.footer-item li a{
+
+    text-decoration: none;
+    color: inherit;
+  transition: color 0.3s;
+    font-size: 13px;
+    letter-spacing: 2px;  
+   
+    
+}
+.footer-item li a:hover {
+    color: rgb(249, 144, 38);
+}
+.footer-text{
+
+    position: absolute;
+    left: 15%;
+    margin-top: 50px;
+}
+
+.footer-text h6{
+    line-height: 25px;
+    font-size: 14px;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-top: 30px;
+
+
+}
+
+.footer-dash{
+
+    width: 106px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -20px;
+}
+
+.footer-ul{
+
+    text-align: center;
+}
+.footer-ul li{
+
+    line-height: 54px;
+    
+}
+
+.footer-ul li a{
+
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-ul-1{
+
+    width: 44px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -25px;
+}
+
+.footer-ul-2{
+
+    width: 66px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -25px;
+}
+
+
+.footer-ul-3{
+
+    width: 38px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -25px;
+}
+
+.footer-ul-4{
+
+    width: 88px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -25px;
+}
+
+.footer-ul-5{
+
+    width: 109px; /* Adjust as needed */
+    height: 8px; /* Thickness of the dash */
+    background-color: rgb(250, 215, 169);
+    margin: 70px auto 0 auto; /* Centering and margin */
+    margin-top: -25px;
+}
+
+.btn3:hover{
+
+    opacity: 0.8;
+}
+
+
+
